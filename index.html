@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Api Weather</title>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="assets/css/wu-icons-style.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper flex">
+      <div class="col-40">
+        <h1 class="heading-primary" id="city-default"></h1>
+        <div class="weather">
+          <div class="weather_box no-svg">
+            <h3 class="heading-tertiary">Teraz</h3>
+            <div class="weather_icon" id="now">
+              <!-- <i class="wi wi-day-cloudy"></i> -->
+            </div>
+            <p class="weather_temp" id="now-temp"></p>
+            <!-- <p class="weather_temp" id="now-temp">10&#186 C</p> -->
+          </div>
+          <div class="weather_box">
+            <h3 class="heading-tertiary">Jutro</h3>
+            <div class="weather_icon" id="tomorrow">
+              <i class="wi wi-day-sunny"></i>
+            </div>
+            <p class="weather_temp" id="tomorrow-temp"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-60">
+        <form class="form">
+          <label for="city-input" class="form_label">Sprawdź pogodę w swojej miejscowości:</label>
+          <input type="text" class="form_input" id="city-input" placeholder="Wpisz miejscowość" required>
+          <button class="form_button"></button>
+        </form>
+        <div class="header_shortcuts">
+          <h2 class="heading-secondary heading-secondary--shortcut">Na skróty</h2>
+          <div class="city">
+            <ul class="city_list">
+              <li class="city_item"><a href="#" class="city_link">Warszawa</a></li>
+              <li class="city_item"><a href="#" class="city_link">Wrocław</a></li>
+              <li class="city_item"><a href="#" class="city_link">Gdańsk</a></li>
+            </ul>
+            <ul class="city_list">
+              <li class="city_item"><a href="#" class="city_link">Poznań</a></li>
+              <li class="city_item"><a href="#" class="city_link">Kraków</a></li>
+              <li class="city_item"><a href="#" class="city_link">Bydgoszcz</a></li>
+            </ul>
+            <ul class="city_list">
+              <li class="city_item"><a href="#" class="city_link">Katowice</a></li>
+              <li class="city_item"><a href="#" class="city_link">Kielce</a></li>
+              <li class="city_item"><a href="#" class="city_link">Rybnik</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <section class="forecast">
+        <div>
+          <h2 class="heading-secondary heading-secondary--days">Dzisiaj, <span class="date_0"></span></h2>
+          <div class="forecast_0"></div>
+        </div>
+        <div>
+          <h2 class="heading-secondary heading-secondary--days">Jutro, <span class="date_1"></span></h2>
+          <div class="forecast_1"></div>
+        </div>
+        <div>
+          <h2 class="heading-secondary heading-secondary--days"><span class="date_2"></span></h2>
+          <div class="forecast_2"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer_text">Tomasz Gunter</p>
+  </footer>
+
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>

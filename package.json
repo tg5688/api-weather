@@ -1,0 +1,16 @@
+{
+  "name": "api-weather",
+  "version": "1.0.0",
+  "description": "Weather from API openweathermap",
+  "main": "",
+  "scripts": {
+    "sass-compile": "node-sass assets/sass/main.scss assets/css/style.css",
+    "sass-watch": "node-sass assets/sass/main.scss assets/css/style.css -w"
+  },
+  "author": "Tomasz Gunter",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {}
+}
